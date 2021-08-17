@@ -1,0 +1,249 @@
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #e7e8de;
+}
+
+.container {
+  background-color: #e7e8de;
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 100%;
+  max-width: 1640px;
+}
+
+.header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  height: 100px;
+}
+
+.header__logo {
+  font-weight: bold;
+  font-size: 35px;
+  color: #050a08;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.header__link {
+  color: #434645;
+  font-size: 25px;
+}
+
+.header__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.header__icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #568676;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.img2 {
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.banner-images {
+  position: relative;
+}
+
+.banner-info {
+  width: 50%;
+}
+
+.banner-title {
+  font-size: 70px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.banner-text {
+  font-size: 26px;
+  line-height: 1.2;
+  color: #61625b;
+  margin-bottom: 30px;
+}
+
+.banner-input {
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.banner-input input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.banner-btn {
+  background-color: #548776;
+  color: white;
+  padding: 25px 100px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+.banner-images {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.food-menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 30px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #e7e8de;
+}
+
+.food {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px;
+  row-gap: 30px;
+}
+
+.food-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.food-img img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 900px;
+  -webkit-box-shadow: #959da5 0px 8px 24px;
+          box-shadow: #959da5 0px 8px 24px;
+}
+
+.food-title {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.food-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.food-price {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+}
+
+.food-btn {
+  padding: 15px 36px;
+  border: 1px solid #548776;
+  background-color: transparent;
+  border-radius: 20px;
+}
+/*# sourceMappingURL=style.css.map */

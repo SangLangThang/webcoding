@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header" id="header">
+        <a href="#" class="header__logo">NeighborGrab</a>
+
+        <ul class="header__menu">
+          <li class="header__item">
+            <a href="#home" class="header__link active-link">Menu</a>
+          </li>
+          <li class="header__item">
+            <a href="#about" class="header__link">Offers</a>
+          </li>
+          <li class="header__item">
+            <a href="#services" class="header__link">Foods</a>
+          </li>
+          <li class="header__item">
+            <a href="#menu" class="header__link">Vegetable</a>
+          </li>
+          <li class="header__item">
+            <a href="#contact" class="header__link">Contact us</a>
+          </li>
+        </ul>
+
+        <div class="header__action" id="header-toggle">
+          <div class="header__icon">
+            <box-icon name="heart"></box-icon>
+          </div>
+          <div class="header__icon">
+            <box-icon name="cart"></box-icon>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <div class="container">
+      <div class="banner">
+        <div class="banner-info">
+          <div class="banner-title">
+            Be The Fastest <br />In Delivering<br />
+            Your Food
+          </div>
+          <div class="banner-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </div>
+          <div class="banner-input">
+            <input type="text" placeholder="Food or Vegetable" />
+          </div>
+          <div class="banner-action">
+            <button class="banner-btn">Delivery</button>
+          </div>
+        </div>
+        <div class="banner-images">
+          <img src="./bg1.png" class="img1" alt="" />
+          <img src="./food1.jpg" alt="" class="img2" id="banner-img" />
+        </div>
+      </div>
+    </div>
+    <div class="container food-menus">
+      <div class="food">
+        <div class="food-img">
+          <img src="./food1.jpg" alt="" id="food-img-1" />
+        </div>
+        <div class="food-title">Food Name</div>
+        <div class="food-action">
+          <p class="food-price">$8.53</p>
+          <button class="food-btn">Add to Cart</button>
+        </div>
+      </div>
+      <div class="food">
+        <div class="food-img">
+          <img src="./food1.jpg" alt="" id="food-img-2" />
+        </div>
+        <div class="food-title">Food Name</div>
+        <div class="food-action">
+          <p class="food-price">$8.53</p>
+          <button class="food-btn">Add to Cart</button>
+        </div>
+      </div>
+      <div class="food">
+        <div class="food-img">
+          <img src="./vege1.jpg" alt="" id="food-img-3" />
+        </div>
+        <div class="food-title">Food Name</div>
+        <div class="food-action">
+          <p class="food-price">$8.53</p>
+          <button class="food-btn">Add to Cart</button>
+        </div>
+      </div>
+      <div class="food">
+        <div class="food-img">
+          <img src="./vege2.jpg" alt="" id="food-img-4" />
+        </div>
+        <div class="food-title">Food Name</div>
+        <div class="food-action">
+          <p class="food-price">$8.53</p>
+          <button class="food-btn">Add to Cart</button>
+        </div>
+      </div>
+      <div class="food">
+        <div class="food-img">
+          <img src="./food1.jpg" alt="" id="food-img-5" />
+        </div>
+        <div class="food-title">Food Name</div>
+        <div class="food-action">
+          <p class="food-price">$8.53</p>
+          <button class="food-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      let bannerImg = document.getElementById("banner-img");
+      let list = document.querySelectorAll(".food-img img");
+      console.log(list);
+      list.forEach((e) => {
+        e.addEventListener("click", () => {
+          bannerImg.src = e.src;
+        });
+      });
+    </script>
+  </body>
+</html>
