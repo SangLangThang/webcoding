@@ -11,12 +11,16 @@ body {
   background-color: #e7e8de;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .container {
   background-color: #e7e8de;
   margin: 0 auto;
   padding: 0 30px;
   width: 100%;
-  max-width: 1640px;
 }
 
 .header {
@@ -84,6 +88,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  font-size: 16px;
 }
 
 .img2 {
@@ -174,15 +179,15 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   row-gap: 30px;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #e7e8de;
 }
 
 .food {
-  width: 30%;
+  width: calc(30%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
